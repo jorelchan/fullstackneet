@@ -1,0 +1,15 @@
+Date,2020/01/01,2020/02/29,2020/03/31
+Revenue,"1,000","1,020","1,040"
+COGS,(300),(280),(260)
+Gross Profit,700,740,780
+SGA,(200),(180),(160)
+Operating Profit,500,560,620
+Other Income,400,420,440
+Other Expense,(300),(280),(260)
+Adjusted Operating Profit,600,700,800
+Exceptional Income,200,220,240
+Exceptional Expense,(400),(380),(360)
+Pre-Tax Profit,400,540,680
+Taxes,(200),(180),(160)
+Tax Adjustments,100,120,140
+Net Profit,300,480,660
