@@ -1,0 +1,79 @@
+.pl-chart {
+  font-family: "Helvetica Neue", "Helvetica", "Arial";
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+  --color-series-red: rgb(255, 99, 132);
+  --color-series-blue: rgb(54, 162, 235);
+  --color-series-grey: rgb(201, 203, 207);
+  --color-series-dark-grey: rgb(152, 153, 155);
+  --color-axis-dark: rgb(191, 191, 191);
+  --color-axis-light: rgb(229, 229, 229);
+}
+
+.pl-chart .chart-container {
+  position: relative;
+}
+
+.pl-chart .chart-title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.pl-chart .chart-tooltip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 6px;
+  line-height: 1;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.pl-chart .chart-tooltip.left::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+}
+
+.pl-chart .chart-tooltip.right::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+}
+
+.pl-chart .chart-tooltip.show {
+  opacity: 1;
+}
+
+.pl-chart .chart-tooltip > * + *,
+.pl-chart .chart-body > * + * {
+  margin-top: 4px;
+}
+
+.pl-chart .chart-tooltip .chart-tooltip__title {
+  font-weight: bold;
+}
+
+.pl-chart .chart-tooltip__item {
+  display: flex;
+  align-items: center;
+}
+
+.pl-chart .chart-tooltip__item > * + * {
+  margin-left: 2px;
+}
